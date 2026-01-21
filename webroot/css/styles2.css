@@ -13,8 +13,6 @@
     --mainColor:#e354f3;
     --secondaryColor:#17b6f9;
     --otherColor:#5d6c83;
-    --colorTabla:#8cb6f5;
-    --azulTransparente:#d3e1f7;
 }
 html{
    height: 100%;
@@ -24,7 +22,7 @@ header{
   background-color: var(--headerColor);
   margin: 0;
   padding: 2rem;
-  color:blue;
+  color:var(--mainColor)
 }
 body{
   background-color: var(--secondColor);
@@ -41,12 +39,6 @@ main{
 h1 {
   text-align: center;
 }
-h2{
-   color:blue;
-}
-a{
-    color:black;
-}
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -55,15 +47,15 @@ a{
 
 .proyecto{
   width: 70%;
-  border: 2px solid var(--colorTabla);
+  border: 2px solid var(--mainColor);
   text-align: center;
-  margin: 5px;
-  background-color: var(--colorTabla);
-  font-weight: 500;
+  margin: 15px;
+  background-color: var(--mainColor);
+  font-weight: 900;
   padding: 5px;
   border-radius: 10px;
 }
-.proyecto a {
+a {
   text-decoration: none;
   font-size: 20px;
 }
@@ -73,10 +65,9 @@ a{
     margin: 0;
     text-align: center;
     bottom: 0;
+    font-size: 20px;
     background-color: var(--headerColor);
 }
-.footer a{
-  font-size: 15px;
-  color: blue;
+footer a{
+  font-size: 20px;
 }
-
